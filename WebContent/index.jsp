@@ -19,7 +19,7 @@
 		
         <!-- Load js files to use with google maps -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR919QvVF2Y632fs9uwdASsOAiVaykJd4" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=your_api_key" type="text/javascript"></script>
         <script type="text/javascript">
         $(document).ready(function() {
             // execute
@@ -153,7 +153,7 @@
     <footer class="footer-container text-center">
     	<div class="container">
     		<p>© Website created by Dimitris Roussis 
-    			<a href="https://github.com/el17408/appathon-project" title="" class="fa-icon">
+    			<a href="https://github.com/jirou97/Appathon_project" title="" class="fa-icon">
     				<i class="fa fa-github"></i>
     			</a>
     		</p>
