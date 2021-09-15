@@ -1,22 +1,27 @@
 # :computer:  Appathon project for the course "Internet and Applications" 
 
-# Περιγραφή Εργασίας
-CTGOV-03: Χώρες στις οποίες έχουν λάβει χώρα Κλινικές Μελέτες γύρω από μία συγκεκριμένη Ασθένεια
+# Requirements
+pip install mysql.connector
+For manipulation of the XML file we used a python script. This script also creates a database and inserts the data in it, hence the library needed above.
+
+# Project Description
+CTGOV-03: Countries in which Clinical Studies have taken place for a particular disease
 
 # :book: Contents
-Σκοπός να φτιάξουμε μία διαδικτυακή εφαρμογή που θα παρουσιάζει όλες τις χώρες στις οποίες έχουν λάβει χώρα κλινικές μελέτες για μία συγκεκριμένη Ασθένεια. Ως είσοδο θα λαμβάνει το όνομα της ασθένειας το οποίο θα το ορίζει ο χρήστης μέσω της web σελίδας ή κατάλληλου endpoint( π.χ. localhost:8080/appathon_project/index.html?search={Disease_Name}&format={map or json}) και το output θα είναι οι χώρες ταξινομημένες ανάλογα με τον αριθμό των κλινικών μελετών που έχουν λάβει χώρα ο οποίος θα παρουσιάζεται είτε ως json είτε με markers πάνω σε χάρτη.
+Our aim is to create a web application that will present all the countries in which clinical studies for a particular disease have taken place. The name of the disease will be defined by the user through the web page or a suitable endpoint (e.g. localhost:8080/appathon_project/index.html?search={Disease_Name}&format={map or json}) and output will be the countries sorted according to the number of clinical studies that have taken place which will be presented either as json or with markers on a map.
 
-Για τις ανάγκες της εφαρμογής αυτής κατεβάσαμε όλες τις διαθέσιμες κλινικές δοκιμές (XML αρχεία) από το https://clinicaltrials.gov/ ώστε να φιλτράρουμε τις κλινικές μελέτες με βάση την ασθένεια και έπειτα να εντοπίσουμε τις χώρες. Τις μελέτες αυτές θα τις προσθέσουμε σε βάση δεδομένων μετά από κατάλληλη επεξεργασία ώστε να κρατάμε τα εξής πεδία : official_title, brief_title , acronym , nct_id , country. Για να γίνει το parsing των δεδομένων δημιουργήθηκε κατάλληλο python script.
+For the needs of this application we downloaded all available clinical trials (XML files) from the https://clinicaltrials.gov/ to filter the clinical trials based on the disease and then identify the countries. We will add these studies to a database after proper processing in order to keep the following fields: official_title, brief_title, acronym, nct_id, country. In order to parsing the data, a suitable python script was created.
 
-Εργαλεία :
+# 🧰 Tools
   - MySQL,
   - html , css , javascript 
-  - Java servlet , για επικοινωνία με βάση δεδομένων και εξυπηρέτηση post request
-  - χρήση google maps api
-  - api για μετατροπή ονόματος χώρας σε συντεταγμένες ώστε να τοποθετηθούν ως markers στον χάρτη (google geocoding) 
+  - Java servlet , for database communication and post request service
+  - google maps api
+  - google geocoding (api to convert country name to coordinates to be placed as markers on the map)
 
-Επίσης υποστηρίζονται 2 formats:
-  - Επιστροφή δεδομένων σε json μορφή
+# Formats
+2 formats are supported:
+  - json format
    [
      { "country_name": "...",
         "cnt" : ...,
@@ -26,7 +31,8 @@ CTGOV-03: Χώρες στις οποίες έχουν λάβει χώρα Κλι
       ...,
       {"status" : 200 ή "Zero_Results"}
    ]
-  - Επίστροφή δεδομένων με markers πάνω σε χάρτη
+  - Data with markers on a map
+
 # :pencil: Authors
 The author of this project is: Roussis Dimitrios
 
