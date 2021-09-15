@@ -13,6 +13,7 @@ Our aim is to create a web application that will present all the countries in wh
 For the needs of this application we downloaded all available clinical trials (XML files) from the https://clinicaltrials.gov/ to filter the clinical trials based on the disease and then identify the countries. We will add these studies to a database after proper processing in order to keep the following fields: official_title, brief_title, acronym, nct_id, country. In order to parsing the data, a suitable python script was created.
 
 # 🧰 Tools
+  - Eclipse IDE
   - MySQL,
   - html , css , javascript 
   - Java servlet , for database communication and post request service
