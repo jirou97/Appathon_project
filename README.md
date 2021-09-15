@@ -37,7 +37,7 @@ For the needs of this application we downloaded all available clinical trials (X
 The author of this project is: Roussis Dimitrios
 
 # :book: Documentation
-The powerpoint can be found in the [Documentation folder](https://github.com/jirou97/Appathon_project/tree/master/documentation)
+The presentation powerpoint can be found in Greek in the [Documentation folder](https://github.com/jirou97/Appathon_project/tree/master/documentation)
 
-Ενα παράδειγμα με markers φαίνεται στην παρακάτω εικόνα.
+An example using the markers format can be seen in the following image.
 ![image](https://user-images.githubusercontent.com/83036199/133442648-63feee4f-d0df-47e4-86e9-bb320f84f155.png)
