@@ -32,3 +32,6 @@ The author of this project is: Roussis Dimitrios
 
 # :book: Documentation
 The powerpoint can be found in the [Documentation folder](https://github.com/jirou97/Appathon_project/tree/master/documentation)
+
+Ενα παράδειγμα με markers φαίνεται στην παρακάτω εικόνα.
+![image](https://user-images.githubusercontent.com/83036199/133442648-63feee4f-d0df-47e4-86e9-bb320f84f155.png)
