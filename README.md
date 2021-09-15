@@ -31,4 +31,4 @@ CTGOV-03: Χώρες στις οποίες έχουν λάβει χώρα Κλι
 The author of this project is: Roussis Dimitrios
 
 # :book: Documentation
-The powerpoint can be found in the Documentation folder
+The powerpoint can be found in the [Documentation folder](https://github.com/jirou97/Appathon_project/tree/master/documentation)
